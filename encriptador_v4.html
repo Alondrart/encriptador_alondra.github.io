@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador_v4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style_v4.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+        <header>
+                   
+            <ul class="logo">
+                <li><p class="c1">A</p></li>
+                <li><p class="c2">S</p></li> 
+                <li><p class="c3">R</p></li>
+                <li><p class="c4">T</p></li>
+            </ul>
+        </header>
+
+               
+        <main class="contenedor">
+        
+
+
+            <div class = "entrada">
+
+
+                <textarea placeholder="ingrese el texto aquí" class = "textarea" id = "texto-entrada"></textarea>
+                
+                <div class = "contenedor-aviso">
+                    <p class="aviso">!</p>
+                    <p> Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+
+                    <button type="button" id="encriptar" onclick="encriptarTexto()">¡Encriptar!</button>
+                    <button type="button" id="desencriptar" onclick="desencriptarTexto()">¡Desencriptar!</button>
+                    <button type="button" id="resetear" onclick="resetearTexto()">¡Resetear!</button>
+
+                </div>
+
+            </div>
+
+            <div class = "salida">
+               
+                <div id="principal">
+
+                    <img src="imagenes/buscando.png">
+
+                    <div class = "mensaje">
+                            
+                        <p class="p1">Ningún mensaje fue encontrado</p>
+                        <p class="p2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                    </div>
+
+                </div>
+
+                <div id="secundario"></div>
+
+                <button type="button" id="copiar" onclick="copiarAlPortapapeles()">Copiar</button>
+
+            </div>        
+            
+            
+        </main>
+    <script src="script_v4.js"></script>      
+    </body>
+</html>
